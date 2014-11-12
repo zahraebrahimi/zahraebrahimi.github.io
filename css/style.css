@@ -15,6 +15,21 @@ color: #404040;
  padding-top: 20px;
 background: #f6f6f6 url(../img/bg.png);
 }
+.logo{
+display: inline;
+float: left;
+margin-left: 20px;
+
+    }
+header .logo h1 {
+background: transparent url(../img/sprites.png?v35) no-repeat 0 0;
+width: 204px;
+height: 58px;
+overflow: hidden;
+text-indent: -9999px;
+text-decoration: none!important;
+/* margin-top: 16px; */
+}
 header .topbar {
 position: fixed;
 top: 0;
@@ -718,7 +733,7 @@ margin: 0 0 7;
     
 }
 footer{
-background-color: #202020;
+background: #202020 url(../img/footer.png) ;
 margin-top: 50px;
 border: 1 solid #eee;
 direction: rtl;
