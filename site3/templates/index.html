@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Poem Maker Pro</title>
+<link href='{{ static_url("css/bootstrap.css") }}' rel="stylesheet">
+<link href='{{ static_url("css/bootstrap-theme.css") }}' rel="stylesheet">
+    <link href='{{ static_url("css/dropzone.css") }}' rel="stylesheet">
+
+</head>
+<body>
+<h1 class="">Enter terms below. - {{ UN}}</h1>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <form method="post" action="/poem" class="form-group dropzone">
+            <p>Plural noun<br><input type="text" name="noun1" class="form-control"></p>
+            <p>Singular noun<br><input type="text" name="noun2" class="form-control"></p>
+            <p>Verb (past tense)<br><input type="text" name="verb" class="form-control"></p>
+            <p>Noun<br><input type="text" name="noun3" class="form-control"></p>
+            <input type="submit" class="btn btn-success">
+        </form>
+    </div>
+</div>
+<script src="{{static_url('js/jquery.js')}}"></script>
+<script src="{{static_url('js/dropzone.min.js')}}"></script>
+<script src="{{static_url('js/dropzone-amd-module.min.js')}}"></script>
+</body>
+</html>

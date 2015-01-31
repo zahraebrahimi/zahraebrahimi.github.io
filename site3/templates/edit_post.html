@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href='{{static_url("css/bootstrap.css")}}' rel="stylesheet " >
+    <link href= '{{static_url("css/bootstrap-theme.css")}}' rel="stylesheet " >
+    <link href= '{{static_url("css/style.css")}}' rel="stylesheet " >
+    <link href= '{{static_url("css/fonts.css")}}' rel="stylesheet " >
+
+
+</head>
+<body style="background: #f6f6f6">
+<div  class="row" style="margin-right: 100px" dir="rtl">
+<form method="post" action="/edit/{{po.id}}">
+    <div>
+<br>
+      <label for="i-post"> ردیف:</label>
+        <br>
+    <input type="text" name="i-post" id="i-post" value="{{po.id}}" readonly="true" >
+<br>
+    <label for="h-post"> عنوان مطلب را وارد نمایید</label>
+        <br>
+    <input type="text" name="h-post" id="h-post" value="{{po.title}}"  placeholder="عنوان مطلب را وارد نمایید" >
+<br>
+    <label for="d-post"> تاریخ امروز:</label>
+        <br>
+    <input type="text" name="d-post" id="d-post" value="{{po.date}}"  placeholder="تاریخ امروز را وارد نمایید" >
+<br>
+    <label for="a-post"> نویسنده: </label>
+<br>
+    <input type="text" name="a-post" id="a-post" value="{{po.author }}"  placeholder="نویسنده:" >
+<br>
+    <label for="t-post"> متن مورد نظر را وارد نمایید</label>
+        <br>
+    <input type="text" name="t-post" id="t-post" value="{{po.text}}"   placeholder="متن مورد نظر وارد نمایید">
+<br>
+     <label for="im-post"> متن مورد نظر را وارد نمایید</label>
+        <br>
+    <input type="text" name="im-post" id="im-post" value="{{po.img}}"   placeholder="متن مورد نظر وارد نمایید">
+<br>
+     </div>
+    <br>
+    <input type="submit" value="ذخیره تغییرات">
+
+
+</form>
+
+</div>
+
+
+ <script src="{{ static_url('js/jquery-2.1.1.min.js')}}"></script>
+ <script src="{{ static_url('js/bootstrap.min.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href='{{static_url("css/bootstrap.css")}}' rel="stylesheet " >
+    <link href= '{{static_url("css/bootstrap-theme.css")}}' rel="stylesheet " >
+    <link href= '{{static_url("css/style.css")}}' rel="stylesheet " >
+    <link href= '{{static_url("css/fonts.css")}}' rel="stylesheet " >
+
+
+</head>
+<body style="font-family: RoyaBold">
+  <div class="col-md-12">
+      <div class="row" style="margin-right: 100px" dir="rtl" >
+         <h3 > افزودن مطلب جدید به سایت</h3>
+          <br>
+          <div>
+              <form method="post" action="/new">
+                  <div class="form_group">
+                  <label for="h_post" class="control-lable_mitra">عنوان مطلب</label>
+                      <br>
+                  <input type="text" name="h_post" id="h_post" value="" placeholder=" نماییدعنوان مطلب را وارد">
+                      <br>
+
+                  <label for="d_pos" class=" control-lable_mitra ">تاریخ امروز:</label>
+                      <br>
+                  <input type="text "name="d_post" id="d_pos" value="" placeholder="تاریخ امروزرا وارد نمایید">
+                      <br>
+                  <label for="t_post" class=" control-lable_mitra "> متن مورد نظر را وارد نمایید</label>
+                      <br>
+                  <input type="text "name="t_post" id="t_post" value="" placeholder="متن مورد نظررا وارد نمایید:">
+                   <br>
+                  <label for="a_post" class=" control-lable_mitra ">نویسنده:</label>
+                      <br>
+                  <input type="text "name="a_post" id="a_post"  value="" placeholder="نویسنده:">
+                      <br>
+
+                   <label for="img" class=" control-lable_mitra ">نام وپسوند عکس مورد نظر</label>
+                      <br>
+                  <input type="text "name="img" id="img" value="" placeholder="نام وپسوند عکس مورد نظر موجود در پوشه img">
+
+               </div>
+                  <br>
+                  <br>
+                  <input type="submit" class="btn btn-primary" value="انتشارپست"  style="margin-right: 100px" dir="rtl">
+              </form>
+          </div>
+      </div>
+
+
+  </div>
+
+
+
+  <script src="{{ static_url('js/jquery-2.1.1.min.js')}}"></script>
+  <script src="{{ static_url('js/bootstrap.min.js')}}"></script>
+</body>
+</html>
